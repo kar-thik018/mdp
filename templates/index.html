@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Disease Prediction</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        
+        <li><a href="p1.html">Detailed Analysis</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Disease Prediction</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the disease with the symptoms
+        <br>
+        </h5>
+      </div>
+
+      <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="s1"><b>Symptom-1</b></label>
+            <br>
+          <input id="s1" name="Symptom1" placeholder="Fever"  type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label for="s2"><b> Symptom-2</b></label>
+            <br>
+          <input id="s2" name="Symptom2" placeholder="Itching"  type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+            <label for="s3"><b>Symptom-3</b></label>
+            <br>
+          <input id="s3" name="Symptom3" placeholder="Dizziness" type="text" class="validate">
+        </div>
+      </div>
+      <div class="input-field col s4">
+        <label for="s4"><b>Symptom-4</b></label>
+        <br>
+      <input id="s4" name="Symptom3" placeholder="Headache" type="text" class="validate">
+    </div>
+  </div>
+  <div class="input-field col s4">
+    <label for="s4"><b>Symptom-5</b></label>
+    <br>
+  <input id="s4" name="Symptom3" placeholder="Stomach Pain" type="text" class="validate">
+</div>
+</div>
+
+      <div class="row center">
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict</button>
+      </div>
+    </form>
+      </div>
+
+      <br>
+        {{pred}}
+      <br>
+
+    </div>
+  </div>
+    <br><br>
+  </div>
+  </div>>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About</h5>
+          <p class="grey-text text-lighten-4"></p>
+
+        </div>
+        <div class="col l3 s12">
+          </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <ul>
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <h5>Made By VENKATASAI,AVINASH,BHARATHWAJ,DILLESWARARAO,SANDEEP</h5>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="./static/js/materialize.js"></script>
+  <script src="./static/js/init.js"></script>
+
+  </body>
+</html>

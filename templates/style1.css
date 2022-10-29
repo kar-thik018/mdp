@@ -1,0 +1,26 @@
+*{
+margin:0px;
+padding:0px;
+font-family: Century Gothic;
+}
+header{
+	background-image: url("im7.jpg");
+	height:97%;
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-size: cover;
+	background-position: centre;
+}
+.header1{
+  padding: 20px;
+  text-align: center;
+}
+.questions{
+	width:11700px;
+	margin:auto;
+	padding-left: 10px;
+}
+.last
+{
+width:100%;
+}
